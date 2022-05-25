@@ -1,0 +1,52 @@
+.advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color:var(--bg-main-color);
+}
+  
+.advantage__list {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+}
+
+.advantage__list-item {
+    width: 270px;
+}
+
+.advantage__list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantage__icon-area {
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #F5F4FA;
+    border-radius: 4px
+}
+
+.advantage__item-title {
+    margin-top: 0;
+    margin-bottom: 10px;    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.advantage__item-description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em
+}

@@ -1,0 +1,191 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.footer__alt-logo-color {
+    color: #FFFFFF;
+}
+
+.footer__logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+}
+
+.footer__adress-list-item {
+    list-style: none;
+    margin-bottom: 9px;
+}
+
+.footer__adress-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__address {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer__email {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.footer__tel {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.footer__address {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__action-items {
+    width: 206px;
+    margin-left: 70px;
+    margin-right: 93px;
+    padding: 0;
+}
+
+.footer__call-to-action {
+    margin-bottom: 20px;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.footer__nets-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nets-item {
+    list-style: none;
+}
+
+
+.footer__net-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer__net-link:hover .footer__net-icon-box,
+.footer__net-link:focus .footer__net-icon-box {
+    background-color:#2196F3;
+}
+
+.footer__net-icon {
+    fill: #ffff;
+}
+
+.footer__columns {
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+.footer__form-label {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.footer__email-field {
+    display: block;
+    width: 358px;
+    height: 50px;
+
+    padding: 15px;
+    margin-right: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    color: #FFFFFF;
+}
+
+.footer__subscribe-btn {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    border: 0;
+    border-radius: 4px;
+}
+
+.footer__input-area {
+    display: flex;
+}
+
+.footer__send-icon {
+    fill: #FFFFFF;
+    margin-left: 10px;
+}
