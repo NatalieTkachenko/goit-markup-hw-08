@@ -130,8 +130,8 @@ img {
   padding-bottom: 48px;
   background-color: #ffffff;
   z-index: 999;
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,8 +139,8 @@ img {
 }
 
 .menu-container.is-open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .js-close-menu {
