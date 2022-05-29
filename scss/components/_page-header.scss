@@ -417,3 +417,75 @@
 }
 
 
+//------------------------------------------DESKTOP-STYLES------------------------------------------//
+
+
+@media screen and (min-width: 1200px) {
+
+.header.container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-content {
+    margin-right: 93px;
+}
+
+.header-content__logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    letter-spacing: 0.03em;
+}
+
+.header-content__nav-list:last-child {
+    margin-right: 305px;
+}
+
+.header-content__contact-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+}
+
+.header-content__contact-item {
+    margin-bottom: 0;
+    margin-right: 30px;
+    
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+}
+
+.header-content__contact-email {
+    font-size: 13.6px;
+    line-height: 1.14;
+}
+
+.header-content__icon-envelop {
+    margin-right: 10px;
+
+    width: 16px;
+    height: 12px;
+}
+
+.header-content__contact-tel {
+    width:auto;
+
+    font-size: 13.6px;
+    line-height: 1.14;
+}
+
+.header-content__icon-smartphone {
+    margin-right: 10px;
+
+    width: 10px;
+    height: 16px;
+}
+
+}
