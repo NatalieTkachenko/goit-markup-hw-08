@@ -1,68 +1,40 @@
-.clients {
-    background-color:var(--bg-main-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+@media screen and (min-width: 480px) {
+
+    .clients {
+        background-color:var(--bg-main-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
 }
 
-.clients__title {
-    margin-bottom: 50px;
+    .clients__title {
+        display: block;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.178;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+    }
+
+    .clients__list-item {
+        display: block;
+        width: 208px;
+        height: 92px;
+
+        border: 1px solid #AFB1B8;
+    }
     
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
+    .clients__icon {
+        fill: #AFB1B8;
+    }
+   
 
-.clients__list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cliets__list-item {
-    list-style: none;
-}
-
-.clients__icon-box {
-    width: 170px;
-    height: 92px;
-    background-position: center;
-    background-size: contain;
-    padding: 0;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__link:focus .clients__icon-box {
-    border: 1px solid #2196F3;
-}
-
-.clients__link:focus .clients__icon {
-    fill:#2196F3;
-}
-
-.clients__link:hover .clients__icon-box {
-    border: 1px solid #2196F3;
-}
-
-.clients__link:hover .clients__icon {
-    fill:#2196F3;
-}
-
-.clients__icon {
-    fill: #AFB1B8;
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
