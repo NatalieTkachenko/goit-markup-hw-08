@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
-    <header>
+  <header>
       <div class="header container">
           <div class="header-content">
 
@@ -26,7 +26,7 @@
                   <svg class="menu-open-btn" width="40px" height="40px" aria-label="Mobile menu">
                     <use href="images/mobile-menu-icons-opt.svg#icon-menu_40px" class="header-content__menu-btn-open"></use>
                     <!--<use href="images/mobile-menu-icons-opt.svg#icon-close_40px" class="header-content__menu-btn-cross"></use>-->
-                  </svg>
+                 </svg>
 
                 </button> 
           </div>
@@ -162,19 +162,21 @@
       
 <!------------------HERO-SECTION------------------->
      
-<!--- <section class="hero">
+<section class="hero">
 
-        <div class="hero__title-container">
+  <div class="container">
+
+        
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        </div>
+        
  
         <div class="hero__btn-container">
             <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
-        </div>--->
+        </div>
 
 <!-----------------------MODAL-WINDOW------------------------>
 
-<!--        <div class="backdrop is-hidden" data-modal>
+   <div class="backdrop is-hidden" data-modal>
          
           <div class="modal">
             
@@ -182,11 +184,11 @@
                  <svg class="modal__close-icon" width="18px" height="18px">
                    <use href="./images/icons-modal-opt.svg#icon-close"></use>
                  </svg>            
-            </button>  -->
+            </button>
 
 <!---------------------------MODAL-FORM------------------------>            
             
-<!--            <p class="modal__form-title">Оставьте свои данные, мы вам перезвоним</p>
+   <p class="modal__form-title">Оставьте свои данные, мы вам перезвоним</p>
 
             <form class="modal__form">
 
@@ -259,33 +261,38 @@
           </div>
         </div>
 
-      </section> -->
+      </div>
+
+      </section>
       
       
       
 <!----------------ADVANTAGE-SECTION--------------------->
 
-<!--      <section class="advantage">
+      <section class="advantage">
         <div class="container">
           <h2 hidden>Скрытый заголовок</h2>
           <ul class="advantage__list">
             
             <li class="advantage__list-item">
-              <div class="advantage__icon-area">
-                <svg width="70px" height="70px">
+              <div class="advantage__icon-box">
+              
+                <svg width="70px" height="70px" class="advantage__icon">
                   <use href="./images/icons.svg#icon-antenna">
                   </use>
                 </svg>
               </div>
+             
               <h3 class="advantage__item-title">Внимание к деталям</h3>
               <p class="advantage__item-description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
+            
             </li>
             
             <li class="advantage__list-item">
-              <div class="advantage__icon-area">
+              <div class="advantage__icon-box">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-clock">
                   </use>
@@ -300,7 +307,7 @@
 
 
             <li class="advantage__list-item">
-              <div class="advantage__icon-area">
+              <div class="advantage__icon-box">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-diagram">
                   </use>
@@ -315,7 +322,7 @@
 
 
             <li class="advantage__list-item">
-              <div class="advantage__icon-area">
+              <div class="advantage__icon-box">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut">
                   </use>
@@ -329,13 +336,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
 
 <!-----------------SERVICES-SECTION----------------->
       
 
-<!--      <section class="service">
+<section class="service">
           <div class="container">
               <h2 class="service__title">Чем мы занимаемся</h2>
               
@@ -377,22 +384,32 @@
               
               </ul>
           </div>
-      </section> -->
+      </section> 
 
 
       <!------------------TEAM-SECTION---------------->
 
 
-<!--    <section class="team">
+<section class="team">
     <div class="container">
         <h2 class="team__title">Наша команда</h2>
        
           <ul class="team__list">
             <li class="team__list-item">
-              <img
-                src="./images/team/team-ihor-demianenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"/>
+                <picture>
+                  <source srcset="./images/img-adaptive/team/team-mobile/demianenko/img-min.jpg 1x, ./images/img-adaptive/team/team-mobile/demianenko/img@2x-min.jpg 2x"
+                  media="(min-width: 320px)"/>
+                  <source srcset="./images/img-adaptive/team/team-tablet/demianenko/img-min.jpg 1x, ./images/img-adaptive/team/team-tablet/demianenko/img@2x-min.jpg 2x"
+                  media="(min-width: 768px"/>
+                  <source srcset="./images/img-adaptive/team/team-desktop/diemianenko/img-min.jpg 1x, ./images/img-adaptive/team/team-desktop/diemianenko/img@2x-min.jpg 2x"
+                  media="(min-width: 1200px)"/>
+
+                  <img 
+                    src="./images/team/team-ihor-demianenko.jpg"
+                    alt="Игорь Демьяненко"/>
+
+                </picture>
+
                 <div class="team__item-descr">
                   <h3 class="team__item-name">Игорь Демьяненко</h3>
                   <p class="team__item-role">Product Designer</p>
@@ -450,11 +467,20 @@
             
             
             <li class="team__list-item">
+
+            <picture>
+              <source srcset="./images/img-adaptive/team/team-mobile/riepina/img-min.jpg 1x, ./images/img-adaptive/team/team-mobile/riepina/img@2x-min.jpg 2x"
+              media="(min-width: 320px)"/>
+              <source srcset="./images/img-adaptive/team/team-tablet/riepina/img-min.jpg 1x, ./images/img-adaptive/team/team-tablet/riepina/img@2x-min.jpg 2x"
+              media="(min-width: 768px)"/>
+              <source srcset="./images/img-adaptive/team/team-desktop/riepina/img-min.jpg 1x, ./images/img-adaptive/team/team-desktop/riepina/img@2x-min.jpg 2x"
+              media="(min-width: 1200px)"/>
+
               <img
                 src="./images/team/team-olha-repina.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+                alt="Ольга Репина"/>
+            </picture>
+
             <div class="team__item-descr">
               <h3 class="team__item-name">Ольга Репина</h3>
               <p class="team__item-role">Frontend Developer</p>
@@ -508,11 +534,19 @@
             
             
             <li class="team__list-item">
+
+              <picture>
+                <source srcset="./images/img-adaptive/team/team-mobile/tarasov/img-min.jpg 1x, ./images/img-adaptive/team/team-mobile/tarasov/img@2x-min.jpg 2x"
+                media="(min-width: 320px)"/>
+                <source srcset="./images/img-adaptive/team/team-tablet/tarasov/img-min.jpg 1x, ./images/img-adaptive/team/team-tablet/tarasov/img@2x-min.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/img-adaptive/team/team-desktop/tarasov/img-min.jpg 1x, ./images/img-adaptive/team/team-desktop/tarasov/img@2x-min.jpg 2x"
+                media="(min-width: 1200px)"/>
               <img
                 src="./images/team/team-nikolay-tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+                alt="Николай Тарасов"/>
+
+              </picture>
             <div class="team__item-descr">
               <h3 class="team__item-name">Николай Тарасов</h3>
               <p class="team__item-role">Marketing</p>
@@ -566,11 +600,19 @@
 
 
             <li class="team__list-item">
+
+              <picture>
+                <source srcset="./images/img-adaptive/team/team-mobile/iermakov/img-min.jpg 1x, ./images/img-adaptive/team/team-mobile/iermakov/img@2x-min.jpg 2x"
+                media="(min-width: 320px)"/>
+                <source srcset="./images/img-adaptive/team/team-tablet/iermakov/img-min.jpg 1x, ./images/img-adaptive/team/team-tablet/iermakov/img@2x-min.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/img-adaptive/team/team-desktop/iermakov/img-min.jpg 1x, ./images/img-adaptive/team/team-desktop/iermakov/img@2x-min.jpg 2x"
+                media="(min-width: 1200px)"/>
               <img
                 src="./images/team/team-mikhail-ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+                alt="Михаил Ермаков"/>
+              </picture>
+              
               <div class="team__item-descr">
                 <h3 class="team__item-name">Михаил Ермаков</h3>
                 <p class="team__item-role">UI Designer</p>
@@ -623,7 +665,7 @@
           </ul>
         
     </div>
-    </section> -->
+    </section>
 
 
     <!--------------------CLIENTS-SECTION----------------->
@@ -632,7 +674,7 @@
         <p class="clients__title">Постоянные клинеты</p>
         <ul class="clients__list">
  
-          <li class="cliets__list-item">   
+          <li class="clients__list-item">   
             
                 <a href="" rel="noreferrer noopener nofollow" class="clients__link">
                  
@@ -646,7 +688,7 @@
           </li>
           
           
-          <li class="cliets__list-item">   
+          <li class="clients__list-item">   
             
               <a href="" rel="noreferrer noopener nofollow" class="clients__link">
                 
@@ -660,7 +702,7 @@
           </li>
           
           
-          <li class="cliets__list-item">
+          <li class="clients__list-item">
               
                 <a href="" rel="noreferrer noopener nofollow" class="clients__link">
                   
@@ -674,7 +716,7 @@
           </li>
 
 
-          <li class="cliets__list-item">
+          <li class="clients__list-item">
                        
                 <a href="" rel="noreferrer noopener nofollow" class="clients__link">
                   
@@ -688,7 +730,7 @@
           </li>
 
           
-          <li class="cliets__list-item">   
+          <li class="clients__list-item">   
             
               <a href="" rel="noreferrer noopener nofollow" class="clients__link">
                 
@@ -702,7 +744,7 @@
           </li>
 
 
-          <li class="cliets__list-item">
+          <li class="clients__list-item">
                
                 <a href="" rel="noreferrer noopener nofollow" class="clients__link">
                   

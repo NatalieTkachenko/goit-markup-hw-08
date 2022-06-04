@@ -1,3 +1,12 @@
+
+@media screen and (min-width: 319px) and (max-width: 1199px) {
+    section.service {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
 .service {
     background-color:var(--bg-main-color);
     padding-bottom: 94px;
@@ -48,4 +57,6 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+}
+
 }
