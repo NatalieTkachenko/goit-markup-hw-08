@@ -239,6 +239,15 @@
 
 @media screen and (min-width: 1200px) {
 
+    .portfolio {
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+    .portfolio__filtr-item {
+        margin-bottom: 50px;
+    }
+
     .portfolio__project-list-item {
         width: 368px;
 

@@ -259,9 +259,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .footer.container {
-        padding-left: 76px;
-    }
+    
     
     .footer__tablet {
         display: flex;
@@ -273,7 +271,9 @@
 
     .footer__address-part {
         margin-right: 165px;
+        margin-left: 76px;
         margin-bottom: 0px;
+
     }
 
     
@@ -304,11 +304,42 @@
 }
 
         .footer__address-part {
+            margin-left: 0;
+
+        }
+
+        .footer__logo {
+            text-align: left;
+
+        }
+
+        .footer__address-link {
+            text-align: left;
+
+        }
+
+        .footer__email {
+            text-align: left;
+        }
+
+        .footer__tel {
+            text-align: left;
+
+        }
+
+
+
+        .footer__address-part {
             margin-right: 70px;
         }
 
         .footer__socials {
             margin-right: 93px;
+        }
+
+        .footer__call-to-action {
+
+            text-align: left;
         }
 
         .footer__input-area {

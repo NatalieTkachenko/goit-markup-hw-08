@@ -130,6 +130,10 @@
     }
 }
 
+.sticky-block {
+    position: sticky;
+    bottom: 0;
+}
 
 .header-content__contact-list {
     list-style: none;
@@ -241,6 +245,7 @@
 
 }
 
+
 //--------------------------------------TABLET-STYLES--------------------------------------
 
 @media screen and (min-width: 768px) {
@@ -297,8 +302,6 @@
    .header-content__nav-link {
     position: relative;
 
-    
-    
     margin-left: 0px;
     
 
@@ -318,19 +321,27 @@
         color: #2196F3;
     }
 
-   }
+    &::after {
 
-   .header-content__nav-link.opened::after {
-    position: absolute;
-    bottom: -32px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        top: 47px;
 
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: #2196F3;
-    border-radius: 2px;
+        background-color: #2196F3;
+        border-radius: 2px;
+
+        opacity: 1;
+    }
+
+    
+
+  
 }
+
+
 
     .header-content__contact-item {
         display: flex;
