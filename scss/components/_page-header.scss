@@ -321,7 +321,9 @@
         color: #2196F3;
     }
 
-    &::after {
+   }
+
+    .opened::after {
 
         content: "";
         display: block;
@@ -333,20 +335,12 @@
         background-color: #2196F3;
         border-radius: 2px;
 
-        opacity: 0;
-
-    }
-
-    &.opened::after {
         opacity: 1;
+
     }
 
- 
-}
-
-
-
-
+    
+  
     .header-content__contact-item {
         display: flex;
         align-content: center;

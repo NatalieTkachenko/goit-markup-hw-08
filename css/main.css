@@ -313,7 +313,7 @@ img {
   .header-content__nav-link:hover, .header-content__nav-link:active, .header-content__nav-link:focus {
     color: #2196F3;
   }
-  .header-content__nav-link::after {
+  .opened::after {
     content: "";
     display: block;
     width: 100%;
@@ -322,9 +322,6 @@ img {
     top: 45px;
     background-color: #2196F3;
     border-radius: 2px;
-    opacity: 0;
-  }
-  .header-content__nav-link.opened::after {
     opacity: 1;
   }
   .header-content__contact-item {
